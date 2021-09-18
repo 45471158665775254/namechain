@@ -22,7 +22,7 @@ function Ready(){
 
 document.getElementById("insert").onclick = function(){
     Ready();
-    firebase.database().ref("names").set({
+    firebase.database().ref("/").set({
         name: nameV
     });
 }
